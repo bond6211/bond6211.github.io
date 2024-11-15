@@ -96,9 +96,9 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <p>问题的关键在于$\frac{f(x)}{g(x)} $可以被转写成$\frac{p(x)}{g(x)} $和另一个式子的乘积，用数学式子直观的表达出来就是：</p>
 <p>$$\frac{f(x)}{g(x)} =\frac{p(x)}{g(x)}\times \frac{f(x)}{p(x)}$$ （为什么下一步做了变换，这一步却要先写成这种形式呢？是因为在实际计算中这种形式更好用）</p>
 <p>即</p>
-<p>$$\frac{f(x)}{p(x)}=\frac{\frac{f(x)}{g(x)}}{\frac{f(x)}{p(x)}}$$</p>
+<p>$$\frac{f(x)}{p(x)}=\frac{\frac{f(x)}{g(x)}}{\frac{p(x)}{g(x)}}$$</p>
 <p>我们对这个式子两边同时取极限，就得到了：</p>
-<p>$$\lim_{x \to a} \frac{f(x)}{p(x)}=\lim_{x \to a} \frac{\frac{f(x)}{g(x)}}{\frac{f(x)}{p(x)}}=\frac{A}{A} =1$$</p>
+<p>$$\lim_{x \to a} \frac{f(x)}{p(x)}=\lim_{x \to a} \frac{\frac{f(x)}{g(x)}}{\frac{p(x)}{g(x)}}=\frac{A}{A} =1$$</p>
 <p>这下就很清楚了。原来我们做替换的过程，就是<strong>把原式乘上了一个极限为1的替换用分式</strong>的过程，又由极限的乘法法则可知，原式的极限和新式的极限显然是相等的。</p>
 <h2>正片</h2>
 <p>我们想把计算$\lim_{x \to a} \frac{f(x)}{g(x)} $，转换成计算$\lim_{x \to a} \frac{p(x)}{g(x)} $，保证替换前后极限值不变，且替换过后的极限更好处理。</p>
