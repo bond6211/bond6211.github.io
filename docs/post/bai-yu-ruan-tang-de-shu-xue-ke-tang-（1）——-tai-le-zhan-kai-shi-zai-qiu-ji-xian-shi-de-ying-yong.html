@@ -109,7 +109,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <h2>正片</h2>
 <p>我们想把计算$\lim_{x \to a} \frac{f(x)}{g(x)} $，转换成计算$\lim_{x \to a} \frac{p(x)}{g(x)} $，保证替换前后极限值不变，且替换过后的极限更好处理。</p>
 <p>想要达到目的的话，可以把替换用函数$p(x)$想成一个多项式（为什么是多项式呢？因为多项式求导方便，提公因式也好提哇）</p>
-<p>由上面的讨论可知，一定有$\lim_{x \to a} \frac{p(x)}{f(x)}=1$成立</p>
+<p>由上面的讨论可知，一定有$\lim_{x \to a} \frac{p(x)}{f(x)}=1$成立（替换所乘分式的记法：<strong>“替换函数/原函数”</strong>）</p>
 <p>且我们讨论的是$\frac{0}{0}$形式的极限，则有$f(a)=p(a)=0$成立</p>
 <p>由洛必达法则知：</p>
 <p>$$\lim_{x \to a} \frac{f(x)}{p(x)} =\lim_{x \to a} \frac{{f}' (x)}{{p}' (x)}=1 $$</p>
@@ -183,7 +183,11 @@ console.log("\n %c Gmeek last https://github.com/Meekdai/Gmeek \n","padding:5px 
 <script>
 document.getElementById("pathHome").setAttribute("d",IconList["home"]);
 document.getElementById("pathIssue").setAttribute("d",IconList["github"]);
-
+cmButton=document.getElementById("cmButton");
+    span=document.createElement("span");
+    span.setAttribute("class","Counter");
+    span.innerHTML="1";
+    cmButton.appendChild(span);
 
 
 function openComments(){
